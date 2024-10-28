@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ContactUS</title>
+    <link rel="stylesheet" href="../assets/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="../assets/script.js" defer></script>
+    
+</head>
+<body>
+     !-- Navbar -->
+<header class="header">
+        <section class="flex">
+            <a href="./index.html" class="logo">Jobs <span style="color: #14ac00;">Center</span></a>
+            <nav class="navbar" id="navbarMenu">
+                <a href="./index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="./aboutus.html"><i class="fas fa-user"></i> About Us</a>
+  		<a href="./blog.html"><i class="fas fa-blog"></i> Blog </a>
+                <a href="./Jobs.html"><i class="fas fa-briefcase"></i> All Jobs</a>
+                <a href="./contact.html"><i class="fas fa-envelope"></i> Contact Us</a>
+                <a href="../pages/login.html" defer> <i class="fas fa-briefcase"> </i>LOG IN</a>
+            </nav>
+            <a href="#" class="btn">PostJob</a>
+            <div class="toggle" class="active" onclick="toggleMenu()">
+           <i class="fas fa-bars"></i>
+       </div>
+        </section>
+    </header>
+
+<div class="section-title">Contact us</div>
+
+<section class="contact">
+
+    <div class="box-container">
+
+        <div class="box">
+            <i class="fas fa-phone"></i>
+            <a href="tel:1234567890">123-456-7890</a>
+            <a href="tel:1112224444">111-222-4444</a>
+        </div>
+        <div class="box">
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:adobeinco@gmail.com">adobeinco@gmail.com</a>
+            <a href="mailto:creativecloud@gmail.com">creativecloud@gmail.com</a>
+        </div>
+        <div class="box">
+            <i class="fas fa-map-marker-alt"></i>
+            <a href="#">skyscraper no. 1, a-1 building, North america, Pobox - 2754</a>
+        </div>
+
+    </div>
+    <form action="" method="post">
+        <h3>drop your message</h3>
+        <div class="flex">
+            <div class="box">
+                <p>name <span>*</span></p>
+                <input type="text" name="name" required maxlength="20"
+                placeholder="enter your name" class="input">
+            </div>
+            <div class="box">
+                <p>email <span>*</span></p>
+                <input type="email" name="email" required maxlength="50"
+                placeholder="enter your email" class="input">
+            </div>
+            <div class="box">
+                <p>number <span>*</span></p>
+                <input type="number" name="number" required min="0" max="9999999999" maxlength="20"
+                placeholder="enter your number" class="input">
+            </div>
+            <div class="box">
+                <p>number <span>*</span></p>
+                <select name="role" required class="input">
+                    <option value="employee">job seeker(employee)</option>
+                    <option value="employer">job provider(employer)</option>
+                </select>
+            </div>
+        </div>
+        <p>message <span>*</span></p>
+        <textarea name="message" class="input" required maxlength="1000" placeholder="enter your message" cols="30" rows="10"></textarea>
+        <input type="submit" name="send" value="send message" class="btn">
+    </form>
+
+</section>
+
+
+
+
+
+<footer class="footer">
+    <section class="grid">
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="./index.html">Home</a>
+            <a href="./index.html">Home</a>
+            <a href="./index.html">Home</a>
+            <a href="#">filter Search</a>
+            <a href="./index.html">All Jobs</a>
+            <a href="./index.html">Contact</a>
+        </div>
+        <div class="box">
+            <h3>Extra links</h3>
+            <a href="#">Account</a>
+            <a href="./index.html">Home</a>
+            <a href="./index.html">Login</a>
+            <a href="./index.html">Register</a>
+            <a href="./index.html">Post Jobs</a>
+            <a href="./index.html">Dashboards</a>
+        </div>
+        <div class="box">
+            <h3>Follow us</h3>
+            <a href="#">Account</a>
+            <a href="./index.html">FaceBook</a>
+            <a href="./index.html">Instagram</a>
+            <a href="./index.html">Linkdin</a>
+            <a href="./index.html">Twitter</a>
+            <a href="./index.html">Youtube</a>
+        </div>
+
+    </section>
+    <div class="credit">&copy; copyright @ 2024 by <span>mr .Joshua momo
+    </span> | all rights reserved!</div>
+</footer>
+
+
+    <!-- custom js link-->
+    <script src="js/script.js"> </script>
+    <script src="../assets/script.js"> </script>
+</body>
+</html>

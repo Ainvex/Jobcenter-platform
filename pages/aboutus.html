@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AboutUs</title>
+    <link rel="stylesheet" href="../assets/style.css">
+    
+</head>
+<body>
+   <!-- Navbar -->
+<header class="header">
+        <section class="flex">
+            <a href="./index.html" class="logo">Jobs <span style="color: #14ac00;">Center</span></a>
+            <nav class="navbar" id="navbarMenu">
+                <a href="./index.html"><i class="fas fa-home"></i> Home</a>
+                <a href="./aboutus.html"><i class="fas fa-user"></i> About Us</a>
+  		<a href="./blog.html"><i class="fas fa-blog"></i> Blog </a>
+                <a href="./Jobs.html"><i class="fas fa-briefcase"></i> All Jobs</a>
+                <a href="./contact.html"><i class="fas fa-envelope"></i> Contact Us</a>
+                <a href="../pages/login.html" defer> <i class="fas fa-briefcase"> </i>LOG IN</a>
+            </nav>
+            <a href="#" class="btn">PostJob</a>
+            <div class="toggle" class="active" onclick="toggleMenu()">
+           <i class="fas fa-bars"></i>
+       </div>
+        </section>
+    </header>
+
+<!-- header section end  -->
+
+<!-- about section now  -->
+ <div class="section-title">About Us</div>
+ <section class="about">
+     <img src="../img/space.jpg" alt="">
+     <div class="box">
+         <h3>Why Choose Us?</h3>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem maxime ut, non a quisquam molestias quasi sint fugiat illo sapiente ullam nemo fuga in quia earum itaque enim voluptatibus hic.</p>
+         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo numquam ipsam dolore aliquid soluta animi, excepturi ipsa sint distinctio unde deserunt
+        </p>
+         
+        <a href="contact.html" class="btn">Contact us</a>
+    </div>
+</section>
+<!-- about section now  -->
+<div class="tab-container">
+    <div class="tab-header">
+      <button class="btn" data-target-tab="#html">HTML</button>
+      <button class="btn active" data-target-tab="#css">CSS</button>
+      <button class="btn" data-target-tab="#js">JavaScript</button>
+    </div>
+    <div class="tab-body">
+      <div class="tab-content" class="active" id="html">
+        <h3>HTML</h3>
+        <p>
+          GENTLEMEN
+          <br>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut tempora odio itaque exercitationem asperiores delectus pariatur earum laboriosam enim iure?
+          <br>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut tempora odio itaque exercitationem asperiores delectus pariatur earum laboriosam enim iure?
+          <br>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut tempora odio itaque exercitationem asperiores delectus pariatur earum laboriosam enim iure?
+         </p>
+      </div>
+      <div class="tab-content active" class="active" id="css">
+        <h3>CSS</h3>
+        <p>
+          GANGSTAMEN
+          <br>
+         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut tempora odio itaque exercitationem asperiores delectus pariatur earum laboriosam enim iure?
+        <br>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut tempora odio itaque exercitationem asperiores delectus pariatur earum laboriosam enim iure?
+         </p>
+      </div>
+      <div class="tab-content" class="active" id="js">
+        <h3>JavaScript</h3>
+        <p>
+         MAFIAMEN <br>
+         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut tempora odio itaque exercitationem asperiores delectus pariatur earum laboriosam enim iure?
+         <br>
+         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut tempora odio itaque exercitationem asperiores delectus pariatur earum laboriosam enim iure?
+         <br>
+         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut tempora odio itaque exercitationem asperiores delectus pariatur earum laboriosam enim iure?
+         <br>
+         Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aut tempora odio itaque exercitationem asperiores delectus pariatur earum laboriosam enim iure?
+       </p>
+      </div>
+    </div>
+  </div>
+<style>
+    
+.tab-container {
+  width: 992px;
+  margin: 0 auto;
+  font-size: 1rem;
+}
+
+.tab-header {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+
+.btn {
+  position: relative;
+  top: 1px;
+  /* width: 33.3%; */
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0.5rem 2rem;
+  font-size: 2.25rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.btn.active {
+  border: 1px solid #ccc;
+  border-bottom-color: #fff;
+  background-color: blue;
+  border-radius: 5px 5px 0 0;
+}
+
+.tab-body {
+  padding: 0.5rem 1rem;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+</style>
+<script>
+    const btns = document.querySelectorAll(".btn");
+
+btns.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    btns.forEach((btn) => btn.classList.remove("active"));
+
+    btn.classList.add("active");
+    const tabContents = document.querySelectorAll(".tab-content");
+
+    // tabContents.forEach((tabContent) => {
+    //   tabContent.className = tabContent.className.replace("active", "");
+    // });
+
+    tabContents.forEach((tab) => tab.classList.remove("active"));
+
+    document.querySelector(btn.dataset.targetTab).classList.add("active");
+  });
+});
+
+</script>
+<!-- reviews start -->
+<section>
+    <div class="section-title">Reviews
+</div>
+<br>
+<br>
+    <div class="reviews">
+        <div class="box-container">
+            <div class="box">
+                <div class="stars">
+                    <i class="class"></i>
+                    <i class="class"></i>
+                    <i class="class"></i>
+                    <i class="class"></i>
+                    <i class="class"></i>
+                </div>
+                <h3 class="title">Amazing results</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias modi error temporibus perferendis, porro id aliquid quod perspiciatis laborum consequatur!
+
+                </p>
+                <div class="user">
+                    <img src="../img/c++.png" alt="">
+                    <div>
+                    <h3>Leo davinci</h3>
+                    <span>Project manager</span>
+                </div>
+            </div>
+            </div>
+            <div class="box">
+                <div class="stars">
+                    <i class="class"></i>
+                    <i class="class"></i>
+                    <i class="class"></i>
+                    <i class="class"></i>
+                    <i class="class"></i>
+                </div>
+                <h3 class="title">Amazing results</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias modi error temporibus perferendis, porro id aliquid quod perspiciatis laborum consequatur!
+
+                </p>
+                <div class="user">
+                    <img src="../img/go.png" alt="">
+                    <div>
+                    <h3>Leo davinci</h3>
+                    <span>Project manager</span>
+                </div>
+            </div>
+            </div>
+            <div class="box">
+                <div class="stars">
+                    <i class="class"></i>
+                    <i class="class"></i>
+                    <i class="class"></i>
+                    <i class="class"></i>
+                    <i class="class"></i>
+                </div>
+                <h3 class="title">Amazing results</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias modi error <br>temporibus perferendis, porro id aliquid quod perspiciatis laborum consequatur!
+
+                </p>
+                <div class="user">
+                    <img src="../img/adobe.png" alt="">
+                    <div>
+                    <h3>Leo davinci</h3>
+                    <span>Project manager</span>
+                </div>
+            </div>
+            </div>
+            <div class="box">
+                <div class="stars">
+                    <i class="class"></i>
+                    <i class="class"></i>
+                    <i class="class"></i>
+                    <i class="class"></i>
+                    <i class="class"></i>
+                </div>
+                <h3 class="title">Amazing results</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias modi error temporibus<br> perferendis, porro id aliquid quod perspiciatis laborum consequatur!
+
+                </p>
+                <div class="user">
+                    <img src="../img/go.png" alt="">
+                    <div>
+                    <h3>Leo davinci</h3>
+                    <span>Project manager</span>
+                </div>
+            </div>
+            </div>
+            <div class="box">
+                <div class="stars">
+                    <i class="class"></i>
+                    <i class="class"></i>
+                    <i class="class"></i>
+                    <i class="class"></i>
+                    <i class="class"></i>
+                </div>
+                <h3 class="title">Amazing results</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias modi error temporibus<br> perferendis, porro id aliquid quod perspiciatis laborum consequatur!
+
+                </p>
+                <div class="user">
+                    <img src="../img/sql.png" alt="">
+                    <div>
+                    <h3>Leo davinci</h3>
+                    <span>Project manager</span>
+                </div>
+            </div>
+            </div>
+            <div class="box">
+                <div class="stars">
+                    <i class="class"></i>
+                    <i class="class"></i>
+                    <i class="class"></i>
+                    <i class="class"></i>
+                    <i class="class"></i>
+                </div>
+                <h3 class="title">Amazing results</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias modi error temporibus<br> perferendis, porro id aliquid quod perspiciatis laborum consequatur!
+
+                </p>
+                <div class="user">
+                    <img src="../img/go.png" alt="">
+                    <div>
+                    <h3>Leo davinci</h3>
+                    <span>Project manager</span>
+                </div>
+            </div>
+            </div>
+        </div>
+ </div>
+</section>
+<!-- reviews end -->
+
+
+
+
+<footer class="footer">
+    <section class="grid">
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="./index.html">Home</a>
+            <a href="./index.html">Home</a>
+            <a href="./index.html">Home</a>
+            <a href="#">filter Search</a>
+            <a href="./index.html">All Jobs</a>
+            <a href="./index.html">Contact</a>
+        </div>
+        <div class="box">
+            <h3>Extra links</h3>
+            <a href="#">Account</a>
+            <a href="./index.html">Home</a>
+            <a href="./index.html">Login</a>
+            <a href="./index.html">Register</a>
+            <a href="./index.html">Post Jobs</a>
+            <a href="./index.html">Dashboards</a>
+        </div>
+        <div class="box">
+            <h3>Follow us</h3>
+            <a href="#">Account</a>
+            <a href="./index.html">FaceBook</a>
+            <a href="./index.html">Instagram</a>
+            <a href="./index.html">Linkdin</a>
+            <a href="./index.html">Twitter</a>
+            <a href="./index.html">Youtube</a>
+        </div>
+
+    </section>
+    <div class="credit">&copy; copyright @ 2024 by <span>mr .Joshua momo
+    </span> | all rights reserved!</div>
+</footer>
+
+
+    <!-- custom js link-->
+    <script src="js/script.js"> </script>
+    <script src="../assets/script.js"> </script>
+</body>
+</html>
